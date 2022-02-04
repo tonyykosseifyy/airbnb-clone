@@ -21,7 +21,9 @@ const Navbar = () => {
           </div>
           <div className="navbar-right">
             <AirbnbButton>Become a Host</AirbnbButton>
-           
+            <AirbnbButton>
+              <img style={{height:"20px"}} src={require("../../assets/worldwide.svg")} alt="worldwide"/>
+            </AirbnbButton>
             <UserButton>
               <FiMenu />
               <div className="no-user-pic">
