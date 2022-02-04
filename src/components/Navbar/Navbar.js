@@ -1,6 +1,6 @@
 import React from "react" ;
 import "./Navbar.css";
-import { AirbnbButton } from "./navbar-components";
+import { AirbnbButton , UserButton } from "./navbar-components";
 
 const Navbar = () => {
   return (
@@ -19,6 +19,9 @@ const Navbar = () => {
           </div>
           <div className="navbar-right">
             <AirbnbButton>Become a Host</AirbnbButton>
+            <UserButton>
+              
+            </UserButton>
           </div>
         </div>
     </header>
