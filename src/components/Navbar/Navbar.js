@@ -8,11 +8,15 @@ const Navbar = () => {
         <div className="navbar-top">
           <div className="navbar-logo">
             <img 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWGgtOwQ63_sPG6c1Z1PGfIxQ5I_rxXhYzBL_9b6meEEZNmlkcL0_dJHT2MZ5X7Ygi_Ow&usqp=CAU"
+              src="https://ohpartners.com/wp-content/uploads/2019/02/logo-airbnb-white-600x187.png"
               alt="airbnb" 
             />
           </div>
-          
+          <div className="navbar-center">
+            <h4>Places to stay</h4>
+            <h4>Experiences</h4>
+            <h4>Online Experiences</h4>
+          </div>
         </div>
     </header>
   );
