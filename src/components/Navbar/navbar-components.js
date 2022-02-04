@@ -22,9 +22,11 @@ export const AirbnbButton = styled(Button)`
   }
 `;
 
-export const UserButton = styled.button`
+export const UserButton = styled(Button)`
   background-color: white ;
   display: flex ;
   align-items: center ;
+  padding: 10px ;
+  color: black ;
 `
 

@@ -1,6 +1,7 @@
 import React from "react" ;
 import "./Navbar.css";
 import { AirbnbButton , UserButton } from "./navbar-components";
+import { FiMenu } from "react-icons/fi" ;
 
 const Navbar = () => {
   return (
@@ -19,8 +20,9 @@ const Navbar = () => {
           </div>
           <div className="navbar-right">
             <AirbnbButton>Become a Host</AirbnbButton>
+           
             <UserButton>
-              
+              <FiMenu />
             </UserButton>
           </div>
         </div>
