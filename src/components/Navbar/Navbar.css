@@ -131,3 +131,8 @@ header.navbar {
     display: block ;
   }
 }
+@media screen and (max-width: 1000px) {
+  .navbar-center {
+    display: none ;
+  }
+}
