@@ -1,16 +1,21 @@
 import React from "react";
 import "./style.css";
-
-
+import { Navbar } from "./components" ;
+import styled from "styled-components";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <AppWrapper>
+      <Navbar />
+    </AppWrapper>
   );
 }
 
 
 export default App ;
+
+
+const AppWrapper = styled.main`
+  background-color: black ;
+  min-height: 100vh ;
+`
