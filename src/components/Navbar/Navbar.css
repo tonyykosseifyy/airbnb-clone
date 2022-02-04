@@ -39,3 +39,7 @@ header.navbar {
 .navbar-center > h4:hover {
   color: gray ;
 }
+.navbar-right {
+  display: flex ;
+  align-items: center ;
+}

@@ -2,6 +2,7 @@ import React from "react" ;
 import "./Navbar.css";
 import { AirbnbButton , UserButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
+import { BiUserCircle } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
            
             <UserButton>
               <FiMenu />
+              <BiUserCircle />
             </UserButton>
           </div>
         </div>

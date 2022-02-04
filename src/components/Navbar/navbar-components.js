@@ -16,6 +16,7 @@ export const AirbnbButton = styled(Button)`
   font-weight: 600;
   height: 50px;
   line-height: 50px ;
+  margin: 0 15px ;
 
   &:hover {
     background-color: #222222 ;
