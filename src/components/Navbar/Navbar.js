@@ -2,7 +2,7 @@ import React from "react" ;
 import "./Navbar.css";
 import { AirbnbButton , UserButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
-import { BiUserCircle } from "react-icons/bi";
+import { FaUserAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
            
             <UserButton>
               <FiMenu />
-              <BiUserCircle />
+              <FaUserAlt style={{transform: "scale(1.2)" }} />
             </UserButton>
           </div>
         </div>
