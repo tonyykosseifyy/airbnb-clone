@@ -35,6 +35,17 @@ header.navbar {
   transition: .3s ease-out ;
   font-weight: 400;
   font-size: 1.09rem ;
+  position: relative;
+}
+.navbar-center > h4::after {
+  content: "" ;
+  position: absolute;
+  bottom: -10px ;
+  left: 50% ;
+  transform: translate(-50%);
+  height: 1px ;
+  width: 5px ;
+  background-color: white ;
 }
 .navbar-center > h4:hover {
   color: gray ;
