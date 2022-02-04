@@ -5,3 +5,17 @@ header.navbar {
   display: flex;
   flex-direction: column;
 }
+
+.navbar-top {
+  display: flex ;
+  justify-content: space-between;
+  align-items: center ;
+
+  height: 100px ;
+}
+
+.navbar-logo > img {
+  object-fit: contain;
+  width: 100% ;
+  height: 100% ;
+}
