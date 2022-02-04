@@ -43,3 +43,14 @@ header.navbar {
   display: flex ;
   align-items: center ;
 }
+.no-user-pic {
+  width: 28px ;
+  height: 28px ;
+}
+.no-user-pic > img {
+  margin-left: 7px ;
+  object-fit: contain;
+  height: 100% ;
+  width: 100% ;
+  border-radius: 50% ;
+}

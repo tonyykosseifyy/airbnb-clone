@@ -2,7 +2,7 @@ import React from "react" ;
 import "./Navbar.css";
 import { AirbnbButton , UserButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
-import { FaUserAlt } from "react-icons/fa";
+import { noUserLink } from "../../assets/links";
 
 const Navbar = () => {
   return (
@@ -24,7 +24,12 @@ const Navbar = () => {
            
             <UserButton>
               <FiMenu />
-              <FaUserAlt style={{transform: "scale(1.2)" }} />
+              <div className="no-user-pic">
+                <img 
+                  src={noUserLink}
+                  alt="no account" 
+                />
+              </div>
             </UserButton>
           </div>
         </div>

@@ -27,7 +27,8 @@ export const UserButton = styled(Button)`
   background-color: white ;
   display: flex ;
   align-items: center ;
-  padding: 10px ;
   color: black ;
+  padding: 8px 15px;
+  border-radius: 40px;
 `
 
