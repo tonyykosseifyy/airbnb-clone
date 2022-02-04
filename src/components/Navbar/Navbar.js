@@ -34,6 +34,14 @@ const Navbar = () => {
                 />
               </div>
             </UserButton>
+            <div className="navbar-links">
+              <a href="">Sign Up</a>
+              <a href="">Log In</a>
+
+              <a href="">Host your home</a>
+              <a href="">Host an experience</a>
+              <a href="">Help</a>
+            </div>
           </div>
         </div>
     </header>
