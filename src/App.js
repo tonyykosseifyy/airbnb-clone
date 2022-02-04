@@ -16,6 +16,6 @@ export default App ;
 
 
 const AppWrapper = styled.main`
-  background-color: black ;
+  background-color: #222222 ;
   min-height: 100vh ;
 `

@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="navbar">
         iaosdn aiosnd aoisnd
     </header>
   );
