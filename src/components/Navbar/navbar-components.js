@@ -11,12 +11,11 @@ const Button = styled.button`
 `;
 
 export const AirbnbButton = styled(Button)`
-  padding: 0px 20px;
+  padding: 0px 15px;
   transition: .3s ease-out;
   font-weight: 600;
   height: 50px;
   line-height: 50px ;
-  margin: 0 15px ;
 
   &:hover {
     background-color: #222222 ;
@@ -30,6 +29,7 @@ export const UserButton = styled(Button)`
   color: black ;
   padding: 8px 15px;
   border-radius: 40px;
+  margin-left: 12px ;
 `
 
 
