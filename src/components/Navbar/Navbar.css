@@ -83,13 +83,51 @@ header.navbar {
   left: 0 ;
   top: 60px;
   right: 0;
-  padding: 12px ;
   color: black ;
-  height: 200px;
   background: white;
   border-radius: 15px;
-
+  padding: 6px 0 ; 
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  overflow: hidden;
+  
+  transform: scale(0);
+  transform-origin: center;
+  transition: .25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.navbar-links-active {
+  transform: scale(1);
+}
+.navbar-links > div {
+  height: 1px ;
+  width: 100% ;
+  margin: 6px 0 ;
+  background-color: grey;
+}
+
+.navbar-links > a {
+  display: block ;
+  padding: 12px 0 12px 25px;
+  transition: .3s ease-out ;
+}
+.navbar-links > a:hover {
+  background-color: gray;
+}
+
+.navbar-logo > img {
+  display: none;
+}
+@media screen and (min-width: 1125px) {
+  .navbar-logo > img:first-child {
+    display: block;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .navbar-logo > img:first-child {
+    display: none ;
+  }
+  .navbar-logo > img:last-child {
+    display: block ;
+  }
 }

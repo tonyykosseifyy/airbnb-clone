@@ -8,6 +8,7 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   font-size: 1.09rem;
+  white-space: nowrap;
 `;
 
 export const AirbnbButton = styled(Button)`

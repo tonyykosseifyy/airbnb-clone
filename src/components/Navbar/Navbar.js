@@ -6,6 +6,7 @@ import { noUserLink } from "../../assets/links";
 
 const Navbar = () => {
   const [ exp , setExp ] = useState(0);
+  const [ toggle , setToggle ] = useState(false);
   return (
     <header className="navbar">
         <div className="navbar-top">
@@ -13,6 +14,10 @@ const Navbar = () => {
             <img 
               src="https://ohpartners.com/wp-content/uploads/2019/02/logo-airbnb-white-600x187.png"
               alt="airbnb" 
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbyRQK8xCJfWyxd4IsEzs-z7Lpe8HbRzTdzwjwlN0YHent3ql4zyeTbWg2vMxFrSsN7C8&usqp=CAU"
+              alt="aribnb"
             />
           </div>
           <div className="navbar-center">
@@ -25,7 +30,7 @@ const Navbar = () => {
             <AirbnbButton style={{lineHeight:"0px",padding:"0 15px"}}>
               <img style={{height:"20px"}} src={require("../../assets/worldwide.svg")} alt="worldwide"/>
             </AirbnbButton>
-            <UserButton>
+            <UserButton onClick={() => setToggle(!toggle)}>
               <FiMenu />
               <div className="no-user-pic">
                 <img 
@@ -34,10 +39,10 @@ const Navbar = () => {
                 />
               </div>
             </UserButton>
-            <div className="navbar-links">
+            <div className={`navbar-links ${toggle && "navbar-links-active"}`}>
               <a href="">Sign Up</a>
               <a href="">Log In</a>
-
+              <div />
               <a href="">Host your home</a>
               <a href="">Host an experience</a>
               <a href="">Help</a>
