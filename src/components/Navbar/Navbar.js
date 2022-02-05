@@ -32,7 +32,7 @@ const Navbar = () => {
             <AirbnbButton style={{lineHeight:"0px",padding:"0 15px"}}>
               <img style={{height:"20px"}} src={require("../../assets/worldwide.svg")} alt="worldwide"/>
             </AirbnbButton>
-            <UserButton onClick={() => setToggle(!toggle)}>
+            <UserButton onClick={() => setToggle(!toggle)} tabindex="0" onBlur={() => setToggle(false)}>
               <FiMenu />
               <div className="no-user-pic">
                 <img 
