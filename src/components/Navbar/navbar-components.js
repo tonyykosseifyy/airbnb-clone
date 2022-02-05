@@ -42,8 +42,8 @@ export const SearchButton = styled(Button)`
   justify-content: center ;
   transition: width .3s ease-out ;
   font-weight: bold ;
-
 `;
+
 export const Input = styled.input`
   outline: none ;
   border: none ;
