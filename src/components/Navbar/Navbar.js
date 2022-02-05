@@ -62,13 +62,13 @@ const Navbar = () => {
             
            { exp === 0 ? 
            <> 
-           <div onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
+           <div style={{flex: selected !==0 && ".3"}} onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
            <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
                <h4>Check In</h4>
-               <p>Add Dates</p>
+               <p>Add Dates</p> 
              </div>
              <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
                <h4>Check Out</h4>
