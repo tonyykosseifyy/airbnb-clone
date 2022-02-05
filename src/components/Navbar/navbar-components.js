@@ -34,6 +34,13 @@ export const UserButton = styled(Button)`
 `
 export const SearchButton = styled(Button)`
   background-color: #ff385c ;
+  height: 50px ;
+  width: ${props => props.focused ? "120px" : "50px"} ;
+  border-radius:  ${props => props.focused ? "30px" : "50%"} ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  transition: .3s ease-out ;
 
 `;
 export const Input = styled.input`

@@ -4,7 +4,7 @@ import "./Navbar-bottom.css";
 import { AirbnbButton , UserButton , Input , SearchButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
 import { noUserLink } from "../../assets/links";
-import { IoSearchOutline } from "react-icons/io";
+import { HiOutlineSearch } from "react-icons/hi";
 
 const Navbar = () => {
   const [ exp , setExp ] = useState(0);
@@ -90,7 +90,10 @@ const Navbar = () => {
                   <h4>Date</h4>
                   <p>Add When you want to go</p>
                 </div>
-                <SearchButton><IoSearchOutline /><span>Search</span></SearchButton>
+                <SearchButton focused={selected !== 0}>
+                  <HiOutlineSearch />
+                  { selected !== 0 && <span style={{marginLeft:"7px"}}>Search</span>}
+                </SearchButton>
               </div>
               
             </div>
