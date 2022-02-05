@@ -1,9 +1,10 @@
 import React, { useState } from "react" ;
 import "./Navbar.css";
 import "./Navbar-bottom.css";
-import { AirbnbButton , UserButton , Input } from "./navbar-components";
+import { AirbnbButton , UserButton , Input , SearchButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
 import { noUserLink } from "../../assets/links";
+import { IoSearchOutline } from "react-icons/io";
 
 const Navbar = () => {
   const [ exp , setExp ] = useState(0);
@@ -84,8 +85,14 @@ const Navbar = () => {
               <Input type="text" placeholder="Where are you going?" />
             </div>
             <div onClick={() => setSelected(5)} className={`navbar-search-component date ${selected === 5 && "search-active"}`}>
-              <h4>Date</h4>
-              <p>Add When you want to go</p>
+              <div className="navbar-search-component-search">
+                <div>
+                  <h4>Date</h4>
+                  <p>Add When you want to go</p>
+                </div>
+                <SearchButton><IoSearchOutline /><span>Search</span></SearchButton>
+              </div>
+              
             </div>
           </>
          }

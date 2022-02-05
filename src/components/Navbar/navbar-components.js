@@ -32,7 +32,10 @@ export const UserButton = styled(Button)`
   border-radius: 40px;
   margin-left: 12px ;
 `
+export const SearchButton = styled(Button)`
+  background-color: #ff385c ;
 
+`;
 export const Input = styled.input`
   outline: none ;
   border: none ;
