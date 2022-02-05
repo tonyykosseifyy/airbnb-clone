@@ -17,6 +17,7 @@
   width: 60vw ;
   height: 75px ;
   color: black ;
+  overflow: hidden ;
 }
 .navbar-search-component {
   border-radius: 50px ;
@@ -29,6 +30,7 @@
 }
 .navbar-search-component:hover {
   background-color: rgb(239, 240, 252);
+
 }
 .navbar-search-component input::placeholder ,
 .navbar-search-component p {
@@ -53,5 +55,5 @@
 }
 .navbar-search-component.search-active {
   background-color: white ;
-  box-shadow: 0px 0px 2px 2px black ;
+  box-shadow: 0px 0px 3px 6px #e3e4eb ;
 }

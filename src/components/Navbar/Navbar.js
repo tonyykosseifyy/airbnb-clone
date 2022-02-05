@@ -57,7 +57,7 @@ const Navbar = () => {
             <h4 className={exp === 1 && "active"} onClick={() => setExp(1)}>Experiences</h4>
             <h4>Online Experiences</h4>
           </div>
-          <div className="navbar-search" style={{background:selected !== 0 && "rgb(244, 245, 253)"}}>
+          <div tabindex="0" onBlur={() => setSelected(0)} className="navbar-search" style={{background:selected !== 0 && "rgb(239, 239, 243"}}>
             <div onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
