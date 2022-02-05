@@ -40,7 +40,7 @@ export const SearchButton = styled(Button)`
   display: flex ;
   align-items: center ;
   justify-content: center ;
-  transition: .3s ease-out ;
+  transition: width .3s ease-out ;
 
 `;
 export const Input = styled.input`

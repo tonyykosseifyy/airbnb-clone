@@ -84,7 +84,7 @@ const Navbar = () => {
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
-            <div onClick={() => setSelected(5)} className={`navbar-search-component date ${selected === 5 && "search-active"}`}>
+            <div style={{flex: selected !==0 && ".57"}} onClick={() => setSelected(5)} className={`navbar-search-component date ${selected === 5 && "search-active"}`}>
               <div className="navbar-search-component-search">
                 <div>
                   <h4>Date</h4>
