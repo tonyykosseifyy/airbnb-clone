@@ -62,19 +62,19 @@ const Navbar = () => {
             
            { exp === 0 ? 
            <> 
-           <div  onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`} style={{flex: ".2"}}>
+           <div style={{flex: ".2"}} onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
-           <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
+           <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
                <h4>Check In</h4>
                <p>Add Dates</p> 
              </div>
-             <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
+             <div onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
                <h4>Check Out</h4>
                <p>Add Dates</p>
              </div>
-             <div onClick={() => setSelected(4)} style={{flex: selected !==0 && ".56"}} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
+             <div onClick={() => setSelected(4)} style={{flex: selected !==0 && ".57"}} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
                <div className="navbar-search-component-search">
                 <div>
                   <h4>Guests</h4>

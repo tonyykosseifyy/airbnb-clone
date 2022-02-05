@@ -14,8 +14,8 @@
   align-items: stretch;
   background-color: white ;
   border-radius: 50px ;
-  width: 60vw ;
-  height: 75px ;
+  width: 65vw ;
+  height: 60px ;
   color: black ;
   overflow: hidden ;
 }
@@ -28,6 +28,9 @@
   justify-content: center;
   transition: .3s ease-out ;
 }
+.navbar-search-component h4 {
+  font-size: 12px;
+}
 .navbar-search-component:hover {
   background-color: rgb(239, 240, 252);
 
@@ -39,19 +42,18 @@
 .navbar-search-component p , 
 .navbar-search-component input {
   margin-top: 5px;
-}
-.navbar-search-component input {
-  font-size: 17px ;
+  font-size: 14px ;
 }
 
 .guests {
   flex: .28 ;
+  padding: 0 10px 0 40px ;
 }
 .location {
   flex: .35 ;
 }
 .check {
-  flex: .2.5 ;
+  flex: .25 ;
 }
 .date , .location-exp{
   flex : .5 ;
@@ -66,4 +68,5 @@
 .navbar-search-component-search {
   display: flex;
   justify-content: space-between;
+  align-items: center ;
 }
