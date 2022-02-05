@@ -41,6 +41,7 @@ export const SearchButton = styled(Button)`
   align-items: center ;
   justify-content: center ;
   transition: width .3s ease-out ;
+  font-weight: bold ;
 
 `;
 export const Input = styled.input`
