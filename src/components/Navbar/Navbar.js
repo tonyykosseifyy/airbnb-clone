@@ -1,5 +1,6 @@
 import React, { useState } from "react" ;
 import "./Navbar.css";
+import "./Navbar-bottom.css";
 import { AirbnbButton , UserButton } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
 import { noUserLink } from "../../assets/links";

@@ -35,7 +35,7 @@ header.navbar button {
 }
 
 .navbar-center > h4 {
-  margin: 0 10px ;
+  margin: 0 15px ;
   cursor: pointer;
   transition: .3s ease-out ;
   font-weight: 400;
