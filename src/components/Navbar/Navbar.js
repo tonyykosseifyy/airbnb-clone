@@ -58,12 +58,13 @@ const Navbar = () => {
             <h4>Online Experiences</h4>
           </div>
           <div tabindex="0" onBlur={() => setSelected(0)} className="navbar-search" style={{background:selected !== 0 && "rgb(239, 239, 243"}}>
-            <div onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
+            
+           { exp === 0 ? 
+           <> 
+           <div onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
-           { exp === 0 ? 
-           <> 
            <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
                <h4>Check In</h4>
                <p>Add Dates</p>
@@ -77,10 +78,16 @@ const Navbar = () => {
                <p>Add Guests</p>
              </div>
            </> : 
+           <>
+           <div onClick={() => setSelected(1)} className={`navbar-search-component location-exp ${selected === 1 && "search-active"}`}>
+              <h4>Location</h4>
+              <Input type="text" placeholder="Where are you going?" />
+            </div>
             <div onClick={() => setSelected(5)} className={`navbar-search-component date ${selected === 5 && "search-active"}`}>
               <h4>Date</h4>
               <p>Add When you want to go</p>
             </div>
+          </>
          }
           </div>
         </div>
