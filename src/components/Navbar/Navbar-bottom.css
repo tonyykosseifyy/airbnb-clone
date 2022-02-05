@@ -15,5 +15,25 @@
   background-color: white ;
   border-radius: 50px ;
   width: 60vw ;
-  height: 70px ;
+  height: 75px ;
+}
+.navbar-search-component {
+  border-radius: 50px ;
+  background-color: red ;
+  cursor: pointer;
+  
+  transition: .3s ease-out ;
+}
+.navbar-search-component:hover {
+  background-color: rgb(230, 232, 252);
+}
+
+.guests {
+  flex: .28 ;
+}
+.location {
+  flex: .35 ;
+}
+.check {
+  flex: .2.5 ;
 }

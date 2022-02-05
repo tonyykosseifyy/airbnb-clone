@@ -57,7 +57,10 @@ const Navbar = () => {
             <h4>Online Experiences</h4>
           </div>
           <div className="navbar-search">
-            
+            <div className="navbar-search-component location"></div>
+            <div className="navbar-search-component check"></div>
+            <div className="navbar-search-component check"></div>
+            <div className="navbar-search-component guests"></div>
           </div>
         </div>
     </header>
