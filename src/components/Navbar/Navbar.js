@@ -62,18 +62,26 @@ const Navbar = () => {
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
-            <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
-              <h4>Check In</h4>
-              <p>Add Dates</p>
+           { exp === 0 ? 
+           <> 
+           <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
+               <h4>Check In</h4>
+               <p>Add Dates</p>
+             </div>
+             <div onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
+               <h4>Check Out</h4>
+               <p>Add Dates</p>
+             </div>
+             <div onClick={() => setSelected(4)} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
+               <h4>Guests</h4>
+               <p>Add Guests</p>
+             </div>
+           </> : 
+            <div onClick={() => setSelected(5)} className={`navbar-search-component date ${selected === 5 && "search-active"}`}>
+              <h4>Date</h4>
+              <p>Add When you want to go</p>
             </div>
-            <div onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
-              <h4>Check Out</h4>
-              <p>Add Dates</p>
-            </div>
-            <div onClick={() => setSelected(4)} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
-              <h4>Guests</h4>
-              <p>Add Guests</p>
-            </div>
+         }
           </div>
         </div>
     </header>
