@@ -74,7 +74,7 @@ const Navbar = () => {
                <h4>Check Out</h4>
                <p>Add Dates</p>
              </div>
-             <div onClick={() => setSelected(4)} style={{flex: selected !==0 && ".6"}} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
+             <div onClick={() => setSelected(4)} style={{flex: selected !==0 && ".7"}} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
                <div className="navbar-search-component-search">
                 <div>
                   <h4>Guests</h4>
