@@ -61,7 +61,7 @@ header.navbar button {
   transform: translate(-50%) scaleX(100%);
 }
 .navbar-center > h4:hover {
-  color: gray ;
+  color: #e0e8fd ;
 }
 .navbar-center > h4.active {
   color: white ;
