@@ -20,7 +20,7 @@ const Navbar = () => {
               alt="aribnb"
             />
           </div>
-          <div className="navbar-center">
+          <div className="navbar-center navbar-center-a">
             <h4 className={exp === 0 && "active"} onClick={() => setExp(0)}>Places to stay</h4>
             <h4 className={exp === 1 && "active"} onClick={() => setExp(1)}>Experiences</h4>
             <h4>Online Experiences</h4>
@@ -47,6 +47,13 @@ const Navbar = () => {
               <a href="">Host an experience</a>
               <a href="">Help</a>
             </div>
+          </div>
+        </div>
+        <div className="navbar-bottom">
+          <div className="navbar-center navbar-center-b">
+            <h4 className={exp === 0 && "active"} onClick={() => setExp(0)}>Places to stay</h4>
+            <h4 className={exp === 1 && "active"} onClick={() => setExp(1)}>Experiences</h4>
+            <h4>Online Experiences</h4>
           </div>
         </div>
     </header>

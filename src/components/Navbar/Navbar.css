@@ -127,6 +127,20 @@ header.navbar button {
 .navbar-logo > img {
   display: none;
 }
+
+/* NAVBAR BOTTOM */
+.navbar-bottom {
+  display: flex ;
+  flex-direction: column;
+  align-items: center ;
+  margin-top: 23px ;
+}
+.navbar-center-b {
+  display: none ;
+  margin-bottom: 20px ;
+}
+
+
 @media screen and (min-width: 1125px) {
   .navbar-logo > img:first-child {
     display: block;
@@ -141,7 +155,10 @@ header.navbar button {
   }
 }
 @media screen and (max-width: 1060px) {
-  .navbar-center {
+  .navbar-center-a {
     display: none ;
+  }
+  .navbar-center-b {
+    display: flex ;
   }
 }
