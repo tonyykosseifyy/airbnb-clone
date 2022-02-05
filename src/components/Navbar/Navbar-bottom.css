@@ -1,0 +1,19 @@
+.navbar-bottom {
+  display: flex ;
+  flex-direction: column;
+  align-items: center ;
+  margin-top: 30px ;
+}
+.navbar-center-b {
+  display: none ;
+  margin-bottom: 20px ;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: stretch;
+  background-color: white ;
+  border-radius: 50px ;
+  width: 60vw ;
+  height: 70px ;
+}

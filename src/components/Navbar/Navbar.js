@@ -56,6 +56,9 @@ const Navbar = () => {
             <h4 className={exp === 1 && "active"} onClick={() => setExp(1)}>Experiences</h4>
             <h4>Online Experiences</h4>
           </div>
+          <div className="navbar-search">
+            
+          </div>
         </div>
     </header>
   );
