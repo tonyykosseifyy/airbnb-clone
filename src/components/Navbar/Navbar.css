@@ -130,7 +130,10 @@ header.navbar button {
 
 /* NAVBAR BOTTOM */
 
-
+.navbar-center-b {
+  display: none ;
+  margin-bottom: 20px ;
+}
 
 @media screen and (min-width: 1125px) {
   .navbar-logo > img:first-child {
