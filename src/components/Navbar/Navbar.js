@@ -66,17 +66,25 @@ const Navbar = () => {
               <h4>Location</h4>
               <Input type="text" placeholder="Where are you going?" />
             </div>
-           <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
+           <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
                <h4>Check In</h4>
                <p>Add Dates</p>
              </div>
-             <div onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
+             <div style={{flex: selected !==0 && ".25"}} onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
                <h4>Check Out</h4>
                <p>Add Dates</p>
              </div>
-             <div onClick={() => setSelected(4)} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
-               <h4>Guests</h4>
-               <p>Add Guests</p>
+             <div onClick={() => setSelected(4)} style={{flex: selected !==0 && ".56"}} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
+               <div className="navbar-search-component-search">
+                <div>
+                  <h4>Guests</h4>
+                  <p>Add Guests</p>
+                </div>
+                <SearchButton focused={selected !== 0}>
+                  <HiOutlineSearch />
+                  { selected !== 0 && <span style={{marginLeft:"7px"}}>Search</span>}
+                </SearchButton>
+                </div>
              </div>
            </> : 
            <>
