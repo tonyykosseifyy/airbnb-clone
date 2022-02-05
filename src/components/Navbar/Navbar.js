@@ -57,10 +57,22 @@ const Navbar = () => {
             <h4>Online Experiences</h4>
           </div>
           <div className="navbar-search">
-            <div className="navbar-search-component location"></div>
-            <div className="navbar-search-component check"></div>
-            <div className="navbar-search-component check"></div>
-            <div className="navbar-search-component guests"></div>
+            <div className="navbar-search-component location">
+              <h4>Location</h4>
+              <input type="text" placeholder="Where are you going?" />
+            </div>
+            <div className="navbar-search-component check">
+              <h4>Check In</h4>
+              <p>Add Dates</p>
+            </div>
+            <div className="navbar-search-component check">
+              <h4>Check Out</h4>
+              <p>Add Dates</p>
+            </div>
+            <div className="navbar-search-component guests">
+              <h4>Guests</h4>
+              <p>Add Guests</p>
+            </div>
           </div>
         </div>
     </header>
