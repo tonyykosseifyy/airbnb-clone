@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
-import { Navbar } from "./components" ;
+import { Navbar , ReactdatesDatepicker } from "./components" ;
 import styled from "styled-components";
 
 const App = () => {
   return (
     <AppWrapper>
       <Navbar />
+      <ReactdatesDatepicker />
     </AppWrapper>
   );
 }
