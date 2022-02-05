@@ -33,5 +33,9 @@ export const UserButton = styled(Button)`
   margin-left: 12px ;
 `
 
-
+export const Input = styled.input`
+  outline: none ;
+  border: none ;
+  background-color: transparent;
+`;
 

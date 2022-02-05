@@ -1,13 +1,14 @@
 import React, { useState } from "react" ;
 import "./Navbar.css";
 import "./Navbar-bottom.css";
-import { AirbnbButton , UserButton } from "./navbar-components";
+import { AirbnbButton , UserButton , Input } from "./navbar-components";
 import { FiMenu } from "react-icons/fi" ;
 import { noUserLink } from "../../assets/links";
 
 const Navbar = () => {
   const [ exp , setExp ] = useState(0);
   const [ toggle , setToggle ] = useState(false);
+  const [ selected , setSelected ] = useState(0);
   return (
     <header className="navbar">
         <div className="navbar-top">
@@ -56,20 +57,20 @@ const Navbar = () => {
             <h4 className={exp === 1 && "active"} onClick={() => setExp(1)}>Experiences</h4>
             <h4>Online Experiences</h4>
           </div>
-          <div className="navbar-search">
-            <div className="navbar-search-component location">
+          <div className="navbar-search" style={{background:selected !== 0 && "rgb(244, 245, 253)"}}>
+            <div onClick={() => setSelected(1)} className={`navbar-search-component location ${selected === 1 && "search-active"}`}>
               <h4>Location</h4>
-              <input type="text" placeholder="Where are you going?" />
+              <Input type="text" placeholder="Where are you going?" />
             </div>
-            <div className="navbar-search-component check">
+            <div onClick={() => setSelected(2)} className={`navbar-search-component check ${selected === 2 && "search-active"}`}>
               <h4>Check In</h4>
               <p>Add Dates</p>
             </div>
-            <div className="navbar-search-component check">
+            <div onClick={() => setSelected(3)} className={`navbar-search-component check ${selected === 3 && "search-active"}`}>
               <h4>Check Out</h4>
               <p>Add Dates</p>
             </div>
-            <div className="navbar-search-component guests">
+            <div onClick={() => setSelected(4)} className={`navbar-search-component guests ${selected === 4 && "search-active"}`}>
               <h4>Guests</h4>
               <p>Add Guests</p>
             </div>

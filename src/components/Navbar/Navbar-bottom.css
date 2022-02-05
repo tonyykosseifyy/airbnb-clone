@@ -34,6 +34,13 @@
 .navbar-search-component p {
   color: #717171 ;
 }
+.navbar-search-component p , 
+.navbar-search-component input {
+  margin-top: 5px;
+}
+.navbar-search-component input {
+  font-size: 17px ;
+}
 
 .guests {
   flex: .28 ;
@@ -43,4 +50,8 @@
 }
 .check {
   flex: .2.5 ;
+}
+.navbar-search-component.search-active {
+  background-color: white ;
+  box-shadow: 0px 0px 2px 2px black ;
 }
